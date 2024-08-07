@@ -1,17 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import sage.all
 from sage.graphs.graph import Graph
 from sage.graphs.traversals import lex_BFS
 import networkx as nx
 import matplotlib.pyplot as plt
 
-
-# In[2]:
 
 
 def find_PEO(graph):
@@ -21,8 +13,6 @@ def find_PEO(graph):
     peo = list(lex_BFS(graph, reverse=True))
     return peo
 
-
-# In[3]:
 
 
 def plot_PEO(edges, peo):
@@ -44,8 +34,6 @@ def plot_PEO(edges, peo):
     plt.show()
 
 
-# In[4]:
-
 
 def plot_graph(edges):
     G = nx.Graph()
@@ -60,8 +48,6 @@ def plot_graph(edges):
     plt.show()
 
 
-# In[5]:
-
 
 def check_chordal(graph):   
     '''
@@ -75,8 +61,6 @@ def check_chordal(graph):
         return False    
 
 
-# In[6]:
-
 
 def check_comparability(graph):
     '''
@@ -88,8 +72,6 @@ def check_comparability(graph):
     else:
         return False
 
-
-# In[7]:
 
 
 def check_interval_graph(graph):
