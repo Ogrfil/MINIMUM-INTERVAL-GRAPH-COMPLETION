@@ -18,7 +18,7 @@ def initialize(num_edges):
 
 
 def calc_solution_value(G, solution):
-    G_copy = G.copy()
+    G_copy = deepcopy(G)
     G_copy.add_edges(solution)
     check, _ = igc.check_interval_graph(G_copy)
     if check:
@@ -28,16 +28,23 @@ def calc_solution_value(G, solution):
 
 
 
-def make_small_change(solution, missing_edges):
-    new_solution = solution.copy()
-    if random.random() < 0.5 and missing_edges:
+def make_small_change(solution, G, iteration, num_iters):
+    all_possible_edges = set((u, v) for u in G.vertices() for v in G.vertices() if u < v)
+    existing_edges = set(G.edges(labels=False))
+    solution_set = set(solution)
+    
+    missing_edges = list(all_possible_edges - existing_edges - solution_set)
+    new_solution = deepcopy(solution)
+    
+    add_prob = max(0.1, 1 - iteration / num_iters)  # Adaptive probability
+    
+    if random.random() < add_prob and missing_edges:
         edge = random.choice(missing_edges)
-        if edge not in new_solution:
-            new_solution.append(edge)
-    else:
-        if new_solution:
-            edge = random.choice(new_solution)
-            new_solution.remove(edge)
+        new_solution.append(edge)
+    elif new_solution:
+        edge = random.choice(new_solution)
+        new_solution.remove(edge)
+                
     return new_solution
 
 
@@ -51,13 +58,14 @@ def safe_exp(x):
 
 
 def simulated_annealing(G, num_iters=1000):
+    
     values = [None for _ in range(num_iters)]
     check, _ = igc.check_interval_graph(G)
     if check:
         return None, G, values
     
     all_possible_edges = set((u, v) for u in G.vertices() for v in G.vertices() if u < v)
-    existing_edges = set(G.edges())
+    existing_edges = set(G.edges(labels=False))
     missing_edges = list(all_possible_edges - existing_edges)
     
     solution = initialize(len(missing_edges))
@@ -65,10 +73,16 @@ def simulated_annealing(G, num_iters=1000):
     best_solution = deepcopy(solution)
     best_value = value
 
-    for i in range(1, num_iters + 1):
-        new_solution = make_small_change(solution, missing_edges)
-        new_value = calc_solution_value(G, new_solution)
 
+    for i in range(1, num_iters + 1):
+        #print(f"Iteration {i}")        
+        #print(f"solution: {solution}" )
+        new_solution = make_small_change(solution, G, i, num_iters)
+        #print(f"new_solution: {new_solution}")
+        new_value = calc_solution_value(G, new_solution)
+        #print(f"new_value: {new_value}")
+        #print("----------------------------------")
+        
         if new_value < value:
             value = new_value
             solution = deepcopy(new_solution)
@@ -87,11 +101,11 @@ def simulated_annealing(G, num_iters=1000):
         #print(f"Current Value: {value}")
         #print(f"Best Value: {best_value}")
 
-    G_minimal = G.copy()
+    G_minimal = deepcopy(G)
     G_minimal.add_edges(best_solution)
     
-    return best_solution, G_minimal, values
-
+    return best_solution, G_minimal, values   
+    
 
 
 #multiplicative cooling schemes
@@ -123,7 +137,7 @@ def quadratic_additive_cooling(t, k, t_max, step_max, t_min=1):
 
 
 
-def simulated_annealing_cooling(G, cooling_function, t_max=100, t_min=1, step_max=1000, alpha=0.99):
+def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_max=1000, alpha=0.99):
     values = [None for _ in range(step_max)]
     step = 1
     accept = 0
@@ -145,7 +159,7 @@ def simulated_annealing_cooling(G, cooling_function, t_max=100, t_min=1, step_ma
     t = t_max   
     
     while step < step_max and t >= t_min:
-        proposed_neighbor = make_small_change(current_state, missing_edges)
+        proposed_neighbor = make_small_change(current_state, G, step, step_max)
         E_n = calc_solution_value(G, proposed_neighbor)
         dE = E_n - current_energy
 
@@ -169,21 +183,25 @@ def simulated_annealing_cooling(G, cooling_function, t_max=100, t_min=1, step_ma
         
     acceptance_rate = float(accept / step)
 
-    G_minimal = G.copy()
+    G_minimal = deepcopy(G)
     G_minimal.add_edges(best_state)
     
     return best_state, G_minimal, values, best_energy, acceptance_rate
 
 
 
-def shaking(solution, k, G):
+def shaking(solution, k, G, iteration, num_iters):
     all_possible_edges = set((u, v) for u in G.vertices() for v in G.vertices() if u < v)
-    existing_edges = set(G.edges())
-    missing_edges = list(all_possible_edges - existing_edges)
+    existing_edges = set(G.edges(labels=False))
+    solution_set = set(solution)
+    
+    missing_edges = list(all_possible_edges - existing_edges - solution_set)
     new_solution = deepcopy(solution)
     
+    add_prob = max(0.1, 1 - iteration / num_iters)  # Adaptive probability based on iteration
+    
     for _ in range(k):
-        if random.random() < 0.5 and missing_edges:
+        if random.random() < add_prob and missing_edges:
             edge = random.choice(missing_edges)
             if edge not in new_solution:
                 new_solution.append(edge)
@@ -245,16 +263,22 @@ def vns_min_interval_completion(G, vns_params):
     solution = initialize(len(G.edges()))
     value = calc_solution_value(G, solution)
     
+    # Ensure num_iters is at least 1
+    num_iters = max(1, int(vns_params['time_limit'] / (vns_params['k_max'] - vns_params['k_min'] + 1)))
+    iteration = 0
+    
     while perf_counter() - start_time < vns_params['time_limit']:
         for k in range(vns_params['k_min'], vns_params['k_max'] + 1):
-            new_solution = shaking(solution, k, G)
+            new_solution = shaking(solution, k, G, iteration, num_iters)
             new_value = calc_solution_value(G, new_solution)
             new_solution, new_value = local_search_best_improvement_unbiased(new_solution, new_value, G)
 
             if new_value < value or (new_value == value and random.random() < vns_params['move_prob']):
                 value = new_value
                 solution = deepcopy(new_solution)
-    
+        
+        iteration += 1  # Increment the iteration counter
+
     G_minimal = G.copy()
     G_minimal.add_edges(solution)
     return solution, G_minimal, value
