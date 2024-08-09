@@ -1,5 +1,7 @@
 import itertools
 import interval_graph_check as igc
+import sage.all
+from sage.graphs.graph import Graph
 
 def brute_force_min_interval_completion(G):
     
