@@ -6,15 +6,14 @@ import math
 from copy import deepcopy
 from time import perf_counter
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 import sage.all
 from sage.graphs.graph import Graph
 import interval_graph_check as igc
 
 
-
 def initialize(num_edges):
     return []
-
 
 
 def calc_solution_value(G, solution):
@@ -25,7 +24,6 @@ def calc_solution_value(G, solution):
         return len(solution)
     else:
         return float('inf')
-
 
 
 def make_small_change(solution, G, iteration, num_iters):
@@ -48,7 +46,6 @@ def make_small_change(solution, G, iteration, num_iters):
     return new_solution
 
 
-
 def safe_exp(x):
     try:
         return math.exp(x)
@@ -56,9 +53,7 @@ def safe_exp(x):
         return float('inf')
 
 
-
 def simulated_annealing(G, num_iters=1000):
-    
     values = [None for _ in range(num_iters)]
     check, _ = igc.check_interval_graph(G)
     if check:
@@ -104,8 +99,7 @@ def simulated_annealing(G, num_iters=1000):
     G_minimal = deepcopy(G)
     G_minimal.add_edges(best_solution)
     
-    return best_solution, G_minimal, values   
-    
+    return best_solution, G_minimal, values
 
 
 #multiplicative cooling schemes
@@ -123,7 +117,6 @@ def quadratic_multiplicative_cooling(t, k, t_max, alpha=0.99):
     return t_max / (1 + alpha * k**2)
 
 
-
 #additive cooling schemes
 
 def linear_additive_cooling(t, k, t_max, step_max, t_min=1):
@@ -134,7 +127,6 @@ def exponential_additive_cooling(t, k, t_max, step_max, t_min=1):
 
 def quadratic_additive_cooling(t, k, t_max, step_max, t_min=1):
     return t_min + (t_max - t_min) * ((step_max - k) / step_max)**2
-
 
 
 def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_max=1000, alpha=0.99):
@@ -189,7 +181,6 @@ def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_m
     return best_state, G_minimal, values, best_energy, acceptance_rate
 
 
-
 def shaking(solution, k, G, iteration, num_iters):
     all_possible_edges = set((u, v) for u in G.vertices() for v in G.vertices() if u < v)
     existing_edges = set(G.edges(labels=False))
@@ -210,7 +201,6 @@ def shaking(solution, k, G, iteration, num_iters):
             new_solution.remove(edge)
                 
     return new_solution
-
 
 
 def local_search_best_improvement_unbiased(solution, value, G):
@@ -252,34 +242,41 @@ def local_search_best_improvement_unbiased(solution, value, G):
     return best_solution, best_value
 
 
-
 def vns_min_interval_completion(G, vns_params):
-    
     check, _ = igc.check_interval_graph(G)
     if check:
-        return None, G, 0
-    
+        return None, G, 0, [], [], [], [], []
+
     start_time = perf_counter()
     solution = initialize(len(G.edges()))
     value = calc_solution_value(G, solution)
-    
-    # Ensure num_iters is at least 1
-    num_iters = max(1, int(vns_params['time_limit'] / (vns_params['k_max'] - vns_params['k_min'] + 1)))
+
+    # Initialize tracking variables
+    all_values = []
+    all_new_values = []
+
     iteration = 0
-    
+
     while perf_counter() - start_time < vns_params['time_limit']:
         for k in range(vns_params['k_min'], vns_params['k_max'] + 1):
-            new_solution = shaking(solution, k, G, iteration, num_iters)
+            new_solution = shaking(solution, k, G, iteration, len(G.edges()))
             new_value = calc_solution_value(G, new_solution)
             new_solution, new_value = local_search_best_improvement_unbiased(new_solution, new_value, G)
 
             if new_value < value or (new_value == value and random.random() < vns_params['move_prob']):
                 value = new_value
                 solution = deepcopy(new_solution)
+            
+            #print(f"Iteration: {iteration}, K: {k}, Value: {value}, New value: {new_value}")
+            
+            # Track values for plotting
+            all_values.append(value)
+            all_new_values.append(new_value)
         
-        iteration += 1  # Increment the iteration counter
+        iteration += 1
 
     G_minimal = G.copy()
     G_minimal.add_edges(solution)
-    return solution, G_minimal, value
+    
+    return solution, G_minimal, value, all_values, all_new_values
 
