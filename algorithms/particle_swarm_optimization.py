@@ -54,7 +54,7 @@ class Particle:
 
     def update_position(self):
         new_position = [pos + vel for pos, vel in zip(self.position, self.velocity)]
-        self.position = [1 if pos > 1 else 0 if pos < 0 else pos for pos in new_position]
+        self.position = [1 if pos > 0.5 else 0 for pos in new_position]
         self.value = self.evaluate()
 
         if self.value < self.personal_best_value:
