@@ -88,7 +88,7 @@ def mutate(individual, missing_edges, mutation_rate):
             
     return list(set(new_individual))
 
-def genetic_algorithm(G, population_size=50, num_generations=100, mutation_rate=0.01, elitism_rate=0.1, tournament_size=5):
+def genetic_algorithm(G, population_size=50, num_generations=100, mutation_rate=0.01, elitism_rate=0.1, s='r', tournament_size=5):
     
     check, _ = igc.check_interval_graph(G)
     if check:
@@ -119,8 +119,10 @@ def genetic_algorithm(G, population_size=50, num_generations=100, mutation_rate=
         
         new_population = elite.copy()
         for _ in range((population_size - elite_size) // 2):
-            parents = roulette_selection(population, fitnesses, 2)
-            #parents = tournament_selection(population, fitnesses, tournament_size, 2)
+            if s=='t':
+                 parents = tournament_selection(population, fitnesses, tournament_size, 2)
+            else:
+                parents = roulette_selection(population, fitnesses, 2)    
             for parent1, parent2 in parents:
                 child1, child2 = crossover(parent1, parent2)
                 child1 = mutate(child1, missing_edges, mutation_rate)
