@@ -1,4 +1,5 @@
 import random
+import math
 import numpy as np
 import interval_graph_check as igc
 import sage.all
@@ -9,17 +10,15 @@ def fitness(G, added_edges):
     G_copy.add_edges(added_edges)
     check, peo = igc.check_interval_graph(G_copy)
     
-    #if new graph is interval, it's fitness is number of newly added edges
     if check:
         return len(added_edges)
     else:
-        return float('inf')  # Penalize non-interval graphs
+        return float('inf')
 
 def initialize_population(G, population_size, missing_edges):
     population = []
     
     for _ in range(population_size):
-        #randomize adding aditional edges
         individual = random.sample(missing_edges, random.randint(1, len(missing_edges)))
         population.append(individual)
     
@@ -49,17 +48,44 @@ def tournament_selection(population, fitnesses, tournament_size, num_parents):
     
     return selected_parents
 
-def roulette_selection(population, fitnesses, num_parents):
-    fitness_sum = sum(1.0 / f if f != float('inf') else 0 for f in fitnesses)
-    probabilities = [(1.0 / f if f != float('inf') else 0) / fitness_sum for f in fitnesses]
+
+def roulette_selection(population, fitnesses):
+    # Handle infinite fitness and calculate inverse fitnesses
+    inv_fitnesses = [
+        0 if math.isinf(f) else 1 / (f + 1e-6) for f in fitnesses
+    ]
     
-    selected_parents = []
-    for _ in range(num_parents):
-        parent_indices = np.random.choice(len(population), size=2, p=probabilities, replace=False)
-        parent1, parent2 = population[parent_indices[0]], population[parent_indices[1]]
-        selected_parents.append((parent1, parent2))
+    total_inv_fitness = sum(inv_fitnesses)
+
+    # If all fitnesses are inf or effectively zero, select two random parents
+    if total_inv_fitness == 0:
+        return random.sample(population, 2)
     
-    return selected_parents
+    # Create cumulative probabilities
+    cumulative_probabilities = []
+    cumulative_sum = 0
+    for inv_fit in inv_fitnesses:
+        cumulative_sum += inv_fit / total_inv_fitness
+        cumulative_probabilities.append(cumulative_sum)
+
+    # Select one parent based on cumulative probabilities
+    def select_parent():
+        rand_value = random.random()
+        for i, cumulative_prob in enumerate(cumulative_probabilities):
+            if rand_value <= cumulative_prob:
+                return population[i]
+        return population[-1]  # Return last population member if no parent is found
+
+    # Select two distinct parents
+    parent1 = select_parent()
+    parent2 = select_parent()
+
+    # Ensure distinct parents
+    if parent1 == parent2:
+        # Re-select parent2 only if it's the same as parent1
+        parent2 = random.choice([p for p in population if p != parent1])
+
+    return [parent1, parent2]
 
 def crossover(parent1, parent2):
     len1 = len(parent1)
@@ -119,11 +145,15 @@ def genetic_algorithm(G, population_size=50, num_generations=100, mutation_rate=
         
         new_population = elite.copy()
         for _ in range((population_size - elite_size) // 2):
-            if s=='t':
-                 parents = tournament_selection(population, fitnesses, tournament_size, 2)
+            if s == 't':
+                parents = tournament_selection(population, fitnesses, tournament_size, 2)
+                for parent1, parent2 in parents:
+                    child1, child2 = crossover(parent1, parent2)
+                    child1 = mutate(child1, missing_edges, mutation_rate)
+                    child2 = mutate(child2, missing_edges, mutation_rate)
+                    new_population.extend([child1, child2])
             else:
-                parents = roulette_selection(population, fitnesses, 2)    
-            for parent1, parent2 in parents:
+                parent1, parent2 = roulette_selection(population, fitnesses)
                 child1, child2 = crossover(parent1, parent2)
                 child1 = mutate(child1, missing_edges, mutation_rate)
                 child2 = mutate(child2, missing_edges, mutation_rate)
@@ -131,6 +161,9 @@ def genetic_algorithm(G, population_size=50, num_generations=100, mutation_rate=
         
         population = new_population.copy()
     
-    G_minimal = G.copy()
-    G_minimal.add_edges(best_individual)
-    return best_individual, G_minimal
+    if best_individual is not None:
+        G_minimal = G.copy()
+        G_minimal.add_edges(best_individual)
+        return best_individual, G_minimal
+    else:
+        return None, None
