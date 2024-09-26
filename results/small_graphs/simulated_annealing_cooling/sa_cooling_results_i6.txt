@@ -1,0 +1,1 @@
+Graph i6 is already an interval graph.

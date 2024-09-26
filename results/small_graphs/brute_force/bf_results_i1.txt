@@ -1,0 +1,2 @@
+Initial graph is already an interval graph
+Execution time: 0.0002 s

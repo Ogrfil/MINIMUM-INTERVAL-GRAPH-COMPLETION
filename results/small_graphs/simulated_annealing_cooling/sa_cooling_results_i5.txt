@@ -1,0 +1,1 @@
+Graph i5 is already an interval graph.

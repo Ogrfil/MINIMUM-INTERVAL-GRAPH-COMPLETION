@@ -1,0 +1,1 @@
+Graph Graph with 8 nodes and 19 edges is already an interval graph.

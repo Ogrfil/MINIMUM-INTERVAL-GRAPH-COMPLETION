@@ -1,0 +1,23 @@
+Results for Graph with 20 nodes:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 114, Execution Time: 0.4102 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.2670 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.4825 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 164, Execution Time: 1.3628 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 1.1498 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 44, Execution Time: 2.9336 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 173, Execution Time: 0.9937 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 94, Execution Time: 1.9908 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 67, Execution Time: 1.9616 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 1.3748 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 49, Execution Time: 3.5225 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 3.1683 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 98, Execution Time: 2.7681 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 61, Execution Time: 4.5114 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 58, Execution Time: 5.5190 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 49, Execution Time: 6.9697 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 43, Execution Time: 7.3233 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 52, Execution Time: 15.9469 s
+Least Added Edges for Graph with 20 nodes: 43
+Best Parameters (Population, Generations, Selection): (100, 200, 'r')
+Execution Time for Best Result: 7.323346853256226 s
+

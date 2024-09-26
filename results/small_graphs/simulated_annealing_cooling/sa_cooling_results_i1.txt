@@ -1,0 +1,1 @@
+Graph i1 is already an interval graph.

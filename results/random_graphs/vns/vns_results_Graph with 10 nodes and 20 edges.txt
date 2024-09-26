@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [], Value: inf, Number of iterations: 1600
+Execution time: 15.0456 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [], Value: inf, Number of iterations: 3040
+Execution time: 30.0324 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [], Value: inf, Number of iterations: 2720
+Execution time: 45.0232 seconds
+-------------------------------------------------
+
+Best Overall Value: inf
+Achieved with Time Limit: None
+Best Solution: None
+Execution Time for Best Value: None seconds

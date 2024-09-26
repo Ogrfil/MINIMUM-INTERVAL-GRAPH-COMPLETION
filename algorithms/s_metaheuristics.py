@@ -129,20 +129,20 @@ def quadratic_additive_cooling(t, k, t_max, step_max, t_min=1):
     return t_min + (t_max - t_min) * ((step_max - k) / step_max)**2
 
 
-def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_max=1000, alpha=0.99):
-    values = [None for _ in range(step_max)]
-    step = 1
+def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_max=1000, alpha=0.99, initial_acceptance_threshold=0.5):
+    values = [None] * step_max
+    step = 0
     accept = 0
-    acceptance_rate = float(accept / step)
     
     check, _ = igc.check_interval_graph(G)
     if check:
-        return None, G, values, 0, acceptance_rate
+        return None, G, values, 0, 1.0
     
     all_possible_edges = set((u, v) for u in G.vertices() for v in G.vertices() if u < v)
     existing_edges = set(G.edges())
     missing_edges = list(all_possible_edges - existing_edges)
 
+    # Initialize with a small number of edges
     current_state = initialize(len(missing_edges))
     current_energy = calc_solution_value(G, current_state)
     best_state = deepcopy(current_state)
@@ -154,26 +154,36 @@ def simulated_annealing_cooling(G, cooling_function, t_max=1000, t_min=1, step_m
         proposed_neighbor = make_small_change(current_state, G, step, step_max)
         E_n = calc_solution_value(G, proposed_neighbor)
         dE = E_n - current_energy
-
-        if random.random() < safe_exp(-dE / t):
-            current_energy = E_n
-            current_state = deepcopy(proposed_neighbor)
-            accept += 1
-
+        
+        # Acceptance logic
+        if step < step_max * initial_acceptance_threshold:
+            if random.random() < 0.8:  # Accept 80% of worse solutions in the beginning
+                current_energy = E_n
+                current_state = deepcopy(proposed_neighbor)
+                accept += 1
+                
+        else:
+            if dE < 0 or random.random() < safe_exp(-dE / t):
+                current_energy = E_n
+                current_state = deepcopy(proposed_neighbor)
+                accept += 1
+                
         if E_n < best_energy:
             best_energy = E_n
             best_state = deepcopy(proposed_neighbor)
+            
 
         # Update temperature using the provided cooling function
         if 'alpha' in cooling_function.__code__.co_varnames:
             t = cooling_function(t, step, t_max, alpha=alpha)
         else:
             t = cooling_function(t, step, t_max, step_max, t_min=t_min)
-
-        step += 1
-        values[step - 1] = current_energy
         
-    acceptance_rate = float(accept / step)
+
+        values[step] = current_energy
+        step += 1
+        
+    acceptance_rate = float(accept) / step if step > 0 else 0
 
     G_minimal = deepcopy(G)
     G_minimal.add_edges(best_state)

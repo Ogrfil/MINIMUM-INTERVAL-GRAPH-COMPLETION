@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [], Value: inf, Number of iterations: 1995
+Execution time: 15.0133 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [], Value: inf, Number of iterations: 4140
+Execution time: 30.0176 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [(0, 4), (0, 6), (4, 6), (6, 7), (7, 8), (0, 7)], Value: 6, Number of iterations: 4255
+Execution time: 45.0140 seconds
+-------------------------------------------------
+
+Best Overall Value: 6
+Achieved with Time Limit: 45
+Best Solution: [(0, 4), (0, 6), (4, 6), (6, 7), (7, 8), (0, 7)]
+Execution Time for Best Value: 45.01400089263916 seconds

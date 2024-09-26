@@ -1,0 +1,23 @@
+Results for Graph with 30 nodes:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.5466 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.4913 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 1.0494 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.9740 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 1.9082 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 388, Execution Time: 6.0430 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 1.6204 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 329, Execution Time: 3.9535 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 252, Execution Time: 3.7986 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 2.4731 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 157, Execution Time: 7.2359 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 4.7327 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 306, Execution Time: 4.8697 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 3.0903 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 230, Execution Time: 8.1738 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 434, Execution Time: 11.8573 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 9.8780 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 11.0622 s
+Least Added Edges for Graph with 30 nodes: 157
+Best Parameters (Population, Generations, Selection): (50, 200, 'r')
+Execution Time for Best Result: 7.235888242721558 s
+

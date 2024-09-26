@@ -1,0 +1,3 @@
+Added edges: ((0, 2),)
+Best value : 1
+Execution time: 0.0068 s

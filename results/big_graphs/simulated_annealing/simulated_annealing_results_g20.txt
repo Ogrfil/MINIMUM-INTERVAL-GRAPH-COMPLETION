@@ -1,0 +1,1 @@
+Graph: Graph with 20 nodes, No result found, Execution time: 40.2850 s

@@ -1,0 +1,18 @@
+Graph is already an interval graph
+Time limit: 15
+Solution: [(35, 39)], Value: inf, Number of iterations: 5
+Execution time: 17.0491 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [(3, 38), (8, 45)], Value: inf, Number of iterations: 10
+Execution time: 34.0022 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [(5, 8), (14, 30)], Value: inf, Number of iterations: 15
+Execution time: 51.2203 seconds
+-------------------------------------------------
+
+Best Overall Value: inf
+Achieved with Time Limit: None
+Best Solution: None
+Execution Time for Best Value: None seconds

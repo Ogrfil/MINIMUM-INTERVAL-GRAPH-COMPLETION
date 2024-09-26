@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [(18, 21), (3, 27), (21, 28), (3, 26), (12, 22), (16, 20), (11, 16), (5, 11), (2, 21), (20, 27), (7, 15), (3, 16), (18, 27)], Value: inf, Number of iterations: 35
+Execution time: 16.9083 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [(17, 28), (8, 14), (16, 22)], Value: inf, Number of iterations: 65
+Execution time: 31.7362 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [(12, 21), (14, 17), (4, 14), (24, 28), (18, 20), (8, 20), (6, 10), (2, 15), (1, 22), (17, 24), (5, 11), (14, 18), (21, 28), (16, 22)], Value: inf, Number of iterations: 95
+Execution time: 45.1189 seconds
+-------------------------------------------------
+
+Best Overall Value: inf
+Achieved with Time Limit: None
+Best Solution: None
+Execution Time for Best Value: None seconds

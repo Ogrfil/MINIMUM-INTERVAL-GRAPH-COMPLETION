@@ -1,0 +1,59 @@
+Cooling Method: linear_multiplicative
+t_max=10000, Best Number of Added Edges: 176, Acceptance rate: 0.8039356851451884
+Execution time: 29.1536 s
+-------------------------------
+Cooling Method: linear_multiplicative
+t_max=50000, Best Number of Added Edges: 174, Acceptance rate: 0.39928
+Execution time: 101.9165 s
+-------------------------------
+Cooling Method: natural_log_exponential_multiplicative
+t_max=10000, Best Number of Added Edges: inf, Acceptance rate: 0.8301886792452831
+Execution time: 0.0788 s
+-------------------------------
+Cooling Method: natural_log_exponential_multiplicative
+t_max=50000, Best Number of Added Edges: inf, Acceptance rate: 0.8166666666666667
+Execution time: 0.0935 s
+-------------------------------
+Cooling Method: logarithmic_multiplicative
+t_max=10000, Best Number of Added Edges: 175, Acceptance rate: 0.39936
+Execution time: 99.5348 s
+-------------------------------
+Cooling Method: logarithmic_multiplicative
+t_max=50000, Best Number of Added Edges: 174, Acceptance rate: 0.40142
+Execution time: 109.9529 s
+-------------------------------
+Cooling Method: quadratic_multiplicative
+t_max=10000, Best Number of Added Edges: 177, Acceptance rate: 0.8
+Execution time: 0.8006 s
+-------------------------------
+Cooling Method: quadratic_multiplicative
+t_max=50000, Best Number of Added Edges: 177, Acceptance rate: 0.8055555555555556
+Execution time: 1.8944 s
+-------------------------------
+Cooling Method: linear_additive
+t_max=10000, Best Number of Added Edges: 175, Acceptance rate: 0.40144
+Execution time: 99.2227 s
+-------------------------------
+Cooling Method: linear_additive
+t_max=50000, Best Number of Added Edges: 175, Acceptance rate: 0.39888
+Execution time: 112.0151 s
+-------------------------------
+Cooling Method: exponential_additive
+t_max=10000, Best Number of Added Edges: 174, Acceptance rate: 0.39788
+Execution time: 112.8808 s
+-------------------------------
+Cooling Method: exponential_additive
+t_max=50000, Best Number of Added Edges: 174, Acceptance rate: 0.39966
+Execution time: 110.5195 s
+-------------------------------
+Cooling Method: quadratic_additive
+t_max=10000, Best Number of Added Edges: 138, Acceptance rate: 0.59884
+Execution time: 109.9576 s
+-------------------------------
+Cooling Method: quadratic_additive
+t_max=50000, Best Number of Added Edges: 175, Acceptance rate: 0.39944
+Execution time: 106.1083 s
+-------------------------------
+
+Total execution time for Graph with 30 nodes: 1003.3553 s
+---------------------------------------------------------

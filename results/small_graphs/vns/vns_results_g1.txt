@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [(1, 3)], Value: 1, Number of iterations: 7705
+Execution time: 15.0047 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [(1, 3)], Value: 1, Number of iterations: 15160
+Execution time: 30.0076 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [(0, 2)], Value: 1, Number of iterations: 21920
+Execution time: 45.0075 seconds
+-------------------------------------------------
+
+Best Overall Value: 1
+Achieved with Time Limit: 15
+Best Solution: [(1, 3)]
+Execution Time for Best Value: 15.004661560058594 seconds

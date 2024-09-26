@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [(6, 7), (1, 8), (7, 8), (6, 8), (2, 8)], Value: 5, Number of iterations: 1520
+Execution time: 15.0152 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [(1, 8)], Value: inf, Number of iterations: 4260
+Execution time: 30.0009 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [], Value: inf, Number of iterations: 6165
+Execution time: 45.0028 seconds
+-------------------------------------------------
+
+Best Overall Value: 5
+Achieved with Time Limit: 15
+Best Solution: [(6, 7), (1, 8), (7, 8), (6, 8), (2, 8)]
+Execution Time for Best Value: 15.015166997909546 seconds

@@ -1,0 +1,10 @@
+Graph: g1, Added edges: [(0, 2)], Execution time: 9.3957,  Best value : 1
+Graph: g2, Added edges: [(1, 3)], Execution time: 10.7620,  Best value : 1
+Graph: g3, Added edges: [(0, 3)], Execution time: 10.5886,  Best value : 1
+Graph: g4, Added edges: [(3, 5)], Execution time: 11.4943,  Best value : 1
+Graph: i1, Initial graph is an interval graph, Execution time: 0.0016 s
+Graph: i2, Initial graph is an interval graph, Execution time: 0.0017 s
+Graph: i3, Initial graph is an interval graph, Execution time: 0.0017 s
+Graph: i4, Initial graph is an interval graph, Execution time: 0.0016 s
+Graph: i5, Initial graph is an interval graph, Execution time: 0.0015 s
+Graph: i6, Initial graph is an interval graph, Execution time: 0.0016 s

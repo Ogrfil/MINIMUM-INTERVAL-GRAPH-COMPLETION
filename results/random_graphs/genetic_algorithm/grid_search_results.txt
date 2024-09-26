@@ -1,0 +1,274 @@
+Results for Graph1 with 9 nodes and 21 edge:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 7, Execution Time: 0.1674 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 5, Execution Time: 0.3078 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 0.3380 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 5, Execution Time: 0.6455 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 0.5789 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 5, Execution Time: 1.2806 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.4201 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 5, Execution Time: 0.7639 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 0.6904 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 5, Execution Time: 1.6772 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 1.4223 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 5, Execution Time: 3.3992 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.9529 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 7, Execution Time: 1.8074 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 1.6521 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 5, Execution Time: 3.6400 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 3.3520 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 5, Execution Time: 8.2354 s
+Least Added Edges for Graph1 with 9 nodes and 21 edge: 5
+Best Parameters (Population, Generations, Selection): (20, 50, 't')
+Execution Time for Best Result: 0.30780529975891113 s
+
+Results for Graph2 with 9 nodes and 21 edge:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.2043 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 6, Execution Time: 0.3765 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 0.4109 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 5, Execution Time: 0.7108 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 0.5780 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 5, Execution Time: 1.3899 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.4549 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 5, Execution Time: 0.9337 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 0.9162 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 7, Execution Time: 1.9455 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 1.8602 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 6, Execution Time: 3.3525 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.8583 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 5, Execution Time: 1.5471 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 5, Execution Time: 1.7549 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 5, Execution Time: 3.1138 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 5, Execution Time: 3.7756 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 5, Execution Time: 6.9286 s
+Least Added Edges for Graph2 with 9 nodes and 21 edge: 5
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.20431280136108398 s
+
+Results for Graph with 6 nodes and 7 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 3, Execution Time: 0.1375 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 0.2664 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 0.2409 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 0.5313 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 0.5497 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 3, Execution Time: 1.0061 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 3, Execution Time: 0.3247 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 0.6276 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 0.6926 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 1.2569 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 1.3173 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 3, Execution Time: 3.1438 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 3, Execution Time: 0.7372 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 1.3747 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 1.5201 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 2.6487 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 3.1423 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 3, Execution Time: 5.9167 s
+Least Added Edges for Graph with 6 nodes and 7 edges: 3
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.13754057884216309 s
+
+Results for Graph with 7 nodes and 12 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.1518 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.2829 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.3083 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 0.6325 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 0.6761 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 4, Execution Time: 1.3056 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.3662 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.7133 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.7614 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 1.4044 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 1.7110 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 3.1236 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.7791 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 1.4522 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 1.7315 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 3.0706 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 3.2894 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 6.0791 s
+Least Added Edges for Graph with 7 nodes and 12 edges: 2
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.15179920196533203 s
+
+Results for Graph with 7 nodes and 15 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.1896 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.3586 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.3570 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 0.6128 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 0.6582 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 1.2247 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.3994 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.6873 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.7648 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 1.3949 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 1.7838 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 2.9747 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.9315 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 1.5899 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 1.6828 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 2.9553 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 3.0719 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 5.8633 s
+Least Added Edges for Graph with 7 nodes and 15 edges: 1
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.18959641456604004 s
+
+Results for Graph with 8 nodes and 15 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 3, Execution Time: 0.1660 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.3194 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.3639 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 0.6894 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 0.6745 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 1.3171 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.4463 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 0.7961 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 0.8944 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 1.8932 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 1.8882 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 3.4989 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.8331 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 1.7882 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 1.8144 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 2.9468 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 3.3248 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 6.0934 s
+Least Added Edges for Graph with 8 nodes and 15 edges: 2
+Best Parameters (Population, Generations, Selection): (20, 50, 't')
+Execution Time for Best Result: 0.319411039352417 s
+
+Results for Graph with 8 nodes and 16 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.1489 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.2792 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.3069 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 0.5654 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 0.5289 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 1.1444 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.3618 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.6814 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.7396 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 1.3968 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 1.4711 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 3.0933 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 2, Execution Time: 0.8707 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 1.5243 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 1.6233 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 2, Execution Time: 3.2558 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 2, Execution Time: 3.8396 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 2, Execution Time: 6.7148 s
+Least Added Edges for Graph with 8 nodes and 16 edges: 2
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.14888262748718262 s
+
+Results for Graph with 8 nodes and 19 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0003 s
+Least Added Edges for Graph with 8 nodes and 19 edges: inf
+
+Results for Graph with 9 nodes and 21 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 9, Execution Time: 0.1828 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 6, Execution Time: 0.3398 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 8, Execution Time: 0.3638 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 9, Execution Time: 0.6873 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 6, Execution Time: 0.7431 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 6, Execution Time: 1.4498 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 7, Execution Time: 0.4147 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 7, Execution Time: 0.7958 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 6, Execution Time: 0.7969 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 6, Execution Time: 1.5205 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 6, Execution Time: 1.3941 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 6, Execution Time: 3.0346 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 6, Execution Time: 0.8162 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 8, Execution Time: 1.5533 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 8, Execution Time: 1.6346 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 9, Execution Time: 3.6981 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 6, Execution Time: 4.0115 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 6, Execution Time: 6.9557 s
+Least Added Edges for Graph with 9 nodes and 21 edges: 6
+Best Parameters (Population, Generations, Selection): (20, 50, 't')
+Execution Time for Best Result: 0.33984827995300293 s
+
+Results for Graph with 9 nodes and 23 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 5, Execution Time: 0.1951 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 0.3769 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 0.3897 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 0.7015 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 0.7779 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 4, Execution Time: 1.4359 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 4, Execution Time: 0.5463 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 4, Execution Time: 0.8358 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 1.0618 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 3, Execution Time: 1.7111 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 4, Execution Time: 1.7434 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 3, Execution Time: 3.7797 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 3, Execution Time: 0.8590 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 3, Execution Time: 1.7715 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 3, Execution Time: 1.7864 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 4, Execution Time: 3.1577 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 3, Execution Time: 3.6759 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 4, Execution Time: 6.6878 s
+Least Added Edges for Graph with 9 nodes and 23 edges: 3
+Best Parameters (Population, Generations, Selection): (20, 50, 't')
+Execution Time for Best Result: 0.3768610954284668 s
+
+Results for Graph with 10 nodes and 20 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 19, Execution Time: 0.2097 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 9, Execution Time: 0.3567 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 8, Execution Time: 0.3741 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 10, Execution Time: 0.6787 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 7, Execution Time: 0.6427 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 7, Execution Time: 1.3409 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 9, Execution Time: 0.4615 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 7, Execution Time: 0.9009 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 7, Execution Time: 0.8823 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 8, Execution Time: 1.8014 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 13, Execution Time: 1.9076 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 7, Execution Time: 3.5072 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 7, Execution Time: 0.9988 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 8, Execution Time: 1.7915 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 10, Execution Time: 1.8157 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 8, Execution Time: 3.5797 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 7, Execution Time: 3.6211 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 10, Execution Time: 7.7714 s
+Least Added Edges for Graph with 10 nodes and 20 edges: 7
+Best Parameters (Population, Generations, Selection): (20, 200, 'r')
+Execution Time for Best Result: 0.6427009105682373 s
+
+Results for Graph with 10 nodes and 26 edges:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 9, Execution Time: 0.1915 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 8, Execution Time: 0.3547 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 7, Execution Time: 0.3886 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 7, Execution Time: 0.7338 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.4791 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 8, Execution Time: 1.4257 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 7, Execution Time: 0.4454 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 10, Execution Time: 0.9866 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 8, Execution Time: 0.9871 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 7, Execution Time: 1.8805 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 8, Execution Time: 1.9690 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 8, Execution Time: 3.8642 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 7, Execution Time: 1.0559 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 7, Execution Time: 1.7888 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 8, Execution Time: 2.3916 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 8, Execution Time: 3.9502 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 8, Execution Time: 4.4147 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 9, Execution Time: 7.9839 s
+Least Added Edges for Graph with 10 nodes and 26 edges: 7
+Best Parameters (Population, Generations, Selection): (20, 100, 'r')
+Execution Time for Best Result: 0.38863468170166016 s
+

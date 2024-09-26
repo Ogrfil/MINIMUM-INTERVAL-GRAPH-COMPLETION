@@ -1,0 +1,17 @@
+Time limit: 15
+Solution: [(3, 6), (2, 6)], Value: 2, Number of iterations: 1900
+Execution time: 15.0267 seconds
+-------------------------------------------------
+Time limit: 30
+Solution: [(2, 6), (3, 6)], Value: 2, Number of iterations: 4105
+Execution time: 30.0175 seconds
+-------------------------------------------------
+Time limit: 45
+Solution: [(3, 6), (2, 6)], Value: 2, Number of iterations: 6155
+Execution time: 45.0346 seconds
+-------------------------------------------------
+
+Best Overall Value: 2
+Achieved with Time Limit: 15
+Best Solution: [(3, 6), (2, 6)]
+Execution Time for Best Value: 15.026733636856079 seconds

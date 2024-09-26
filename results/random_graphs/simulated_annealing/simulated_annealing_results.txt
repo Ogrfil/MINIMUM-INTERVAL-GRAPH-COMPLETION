@@ -1,0 +1,12 @@
+Graph: Graph1 with 9 nodes and 21 edge, Added edges: [(6, 7), (7, 8), (1, 8), (2, 8), (6, 8)], Execution time: 15.2925,  Best value : 5
+Graph: Graph2 with 9 nodes and 21 edge, Added edges: [(1, 7), (1, 4), (4, 6), (4, 7), (3, 7), (6, 8)], Execution time: 14.7493,  Best value : 6
+Graph: Graph with 6 nodes and 7 edges, Added edges: [(3, 5), (1, 5), (1, 3)], Execution time: 10.9590,  Best value : 3
+Graph: Graph with 7 nodes and 12 edges, Added edges: [(1, 4), (1, 6)], Execution time: 11.2987,  Best value : 2
+Graph: Graph with 7 nodes and 15 edges, Added edges: [(1, 4)], Execution time: 14.1091,  Best value : 1
+Graph: Graph with 8 nodes and 15 edges, Added edges: [(2, 3), (2, 4)], Execution time: 12.9164,  Best value : 2
+Graph: Graph with 8 nodes and 16 edges, Added edges: [(3, 6), (2, 6)], Execution time: 13.6216,  Best value : 2
+Graph: Graph with 8 nodes and 19 edges, Initial graph is an interval graph, Execution time: 0.0017 s
+Graph: Graph with 9 nodes and 21 edges, Added edges: [(6, 7), (4, 6), (0, 6), (0, 4), (7, 8), (0, 7)], Execution time: 16.6224,  Best value : 6
+Graph: Graph with 9 nodes and 23 edges, Added edges: [(5, 7), (4, 5), (5, 6), (2, 6)], Execution time: 20.4286,  Best value : 4
+Graph: Graph with 10 nodes and 20 edges, No result found, Execution time: 15.2074 s
+Graph: Graph with 10 nodes and 26 edges, No result found, Execution time: 16.7679 s

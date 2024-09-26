@@ -1,0 +1,218 @@
+Results for g1:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.1161 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.2089 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.2253 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 0.4133 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 0.4483 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 0.8377 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.2777 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.5096 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.5461 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 1.0130 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 1.0861 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 2.0355 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.5849 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 1.0840 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 1.1667 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 2.1147 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 2.5018 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 4.2238 s
+Least Added Edges for g1: 1
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.1161038875579834 s
+
+Results for g2:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.1263 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.2238 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.2390 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 0.4428 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 0.4874 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 0.9842 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.3022 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.5477 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.5822 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 1.0999 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 1.1732 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 2.1771 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.6243 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 1.1251 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 1.2528 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 2.2422 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 2.5326 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 4.5387 s
+Least Added Edges for g2: 1
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.12627887725830078 s
+
+Results for g3:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.1220 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 2, Execution Time: 0.2238 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.2408 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 0.4591 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 0.4842 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 0.8893 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.2964 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.5416 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.5920 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 1.2393 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 1.2013 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 2.1775 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.6255 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 1.1260 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 1.2495 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 2.2650 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 2.5898 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 4.5748 s
+Least Added Edges for g3: 1
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.12204694747924805 s
+
+Results for g4:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.1310 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.2368 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: 2, Execution Time: 0.2631 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 0.4744 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 0.5137 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 0.9514 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.3097 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 0.5695 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 0.6171 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 1.1524 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 1.2398 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 2.3132 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: 1, Execution Time: 0.6724 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: 1, Execution Time: 1.2013 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: 1, Execution Time: 1.3306 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: 1, Execution Time: 2.4076 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: 1, Execution Time: 2.6542 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: 1, Execution Time: 4.8452 s
+Least Added Edges for g4: 1
+Best Parameters (Population, Generations, Selection): (20, 50, 'r')
+Execution Time for Best Result: 0.13096141815185547 s
+
+Results for i1:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Least Added Edges for i1: inf
+
+Results for i2:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Least Added Edges for i2: inf
+
+Results for i3:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Least Added Edges for i3: inf
+
+Results for i4:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Least Added Edges for i4: inf
+
+Results for i5:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0003 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0002 s
+Least Added Edges for i5: inf
+
+Results for i6:
+Population: 20, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0002 s
+Population: 20, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 20, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 50, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 50, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 100, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 200, Selection: Roulette, Added Edges: No added edges, Execution Time: 0.0001 s
+Population: 100, Generations: 200, Selection: Tournament, Added Edges: No added edges, Execution Time: 0.0001 s
+Least Added Edges for i6: inf
+
